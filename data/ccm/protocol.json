@@ -1,0 +1,9 @@
+{
+  "n": 240,
+  "B": 1000,
+  "lags": "Fig. 4 top 10 by |r|",
+  "embedding": "tau 1..12, then E 2..10, tolerance 0.02",
+  "null": "phase-randomized target surrogates",
+  "samples": 30,
+  "exclusion_radius": 0
+}

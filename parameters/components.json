@@ -1,0 +1,236 @@
+[
+  {
+    "region": "AM",
+    "component": "tci",
+    "case": "am_la_tci",
+    "input": "data/residuals/AM_tci.npy",
+    "order": 3,
+    "crop": 0,
+    "n_input": 624,
+    "window": 120,
+    "window_count": "N-W",
+    "stl_configs": [
+      {
+        "period": 12,
+        "seasonal": 7,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 23,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 13,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": true
+      }
+    ]
+  },
+  {
+    "region": "AM",
+    "component": "tet",
+    "case": "am_la_tet",
+    "input": "data/residuals/AM_tet.npy",
+    "order": 3,
+    "crop": 0,
+    "n_input": 624,
+    "window": 120,
+    "window_count": "N-W",
+    "stl_configs": [
+      {
+        "period": 12,
+        "seasonal": 7,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 23,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 13,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": false
+      }
+    ]
+  },
+  {
+    "region": "AM",
+    "component": "pai",
+    "case": "am_la_pai",
+    "input": "data/residuals/AM_pai.npy",
+    "order": 3,
+    "crop": 0,
+    "n_input": 624,
+    "window": 120,
+    "window_count": "N-W",
+    "stl_configs": [
+      {
+        "period": 12,
+        "seasonal": 7,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 23,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 13,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": false
+      }
+    ]
+  },
+  {
+    "region": "NB",
+    "component": "tci",
+    "case": "northboreal_la_tci",
+    "input": "data/residuals/NB_tci.npy",
+    "order": 3,
+    "crop": 0,
+    "n_input": 624,
+    "window": 120,
+    "window_count": "N-W",
+    "stl_configs": [
+      {
+        "period": 12,
+        "seasonal": 7,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 23,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 13,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": true
+      }
+    ]
+  },
+  {
+    "region": "NB",
+    "component": "tet",
+    "case": "northboreal_la_tet",
+    "input": "data/residuals/NB_tet.npy",
+    "order": 3,
+    "crop": 0,
+    "n_input": 624,
+    "window": 120,
+    "window_count": "N-W",
+    "stl_configs": [
+      {
+        "period": 12,
+        "seasonal": 7,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 23,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 13,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": true
+      }
+    ]
+  },
+  {
+    "region": "NB",
+    "component": "pai",
+    "case": "northboreal_la_pai",
+    "input": "data/residuals/NB_pai.npy",
+    "order": 3,
+    "crop": 0,
+    "n_input": 624,
+    "window": 120,
+    "window_count": "N-W",
+    "stl_configs": [
+      {
+        "period": 12,
+        "seasonal": 7,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 23,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 13,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": true
+      }
+    ]
+  },
+  {
+    "region": "TP",
+    "component": "tci",
+    "case": "tp_grassland_la_tci",
+    "input": "data/residuals/TP_tci.npy",
+    "order": 3,
+    "crop": 0,
+    "n_input": 624,
+    "window": 120,
+    "window_count": "N-W",
+    "stl_configs": [
+      {
+        "period": 12,
+        "seasonal": 7,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 23,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 13,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": true
+      }
+    ]
+  },
+  {
+    "region": "TP",
+    "component": "tet",
+    "case": "tp_grassland_la_tet",
+    "input": "data/residuals/TP_tet.npy",
+    "order": 3,
+    "crop": 0,
+    "n_input": 624,
+    "window": 120,
+    "window_count": "N-W",
+    "stl_configs": [
+      {
+        "period": 12,
+        "seasonal": 7,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 23,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 13,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": false
+      }
+    ]
+  },
+  {
+    "region": "TP",
+    "component": "pai",
+    "case": "tp_grassland_la_pai",
+    "input": "data/residuals/TP_pai.npy",
+    "order": 3,
+    "crop": 120,
+    "n_input": 744,
+    "window": 120,
+    "window_count": "N-W",
+    "stl_configs": [
+      {
+        "period": 12,
+        "seasonal": 7,
+        "seasonal_deg": 1,
+        "seasonal_jump": 1,
+        "trend": 23,
+        "trend_deg": 1,
+        "trend_jump": 1,
+        "low_pass": 13,
+        "low_pass_deg": 1,
+        "low_pass_jump": 1,
+        "robust": false
+      }
+    ]
+  }
+]

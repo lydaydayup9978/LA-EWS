@@ -1,0 +1,7 @@
+id,train_n,gap_steps,test_n,train_n_over_block,test_n_over_block,training_selected_lead_years,training_r,heldout_fixed_lag_r,status
+AM_DFA,120,17,103,7.0588235294117645,6.0588235294117645,9.0,0.716107669550229,0.8205471199474836,retrospective_internal_check
+AM_AR1,120,17,103,7.0588235294117645,6.0588235294117645,21.0,0.7002201750120354,-0.4464443484934259,retrospective_internal_check
+NB_DFA,120,16,104,7.5,6.5,11.0,0.6517150812912487,0.3867806111633043,retrospective_internal_check
+NB_AR1,120,16,104,7.5,6.5,12.0,0.842909739090558,0.6062207930665384,retrospective_internal_check
+TP_DFA,120,16,104,7.5,6.5,11.0,0.4748676074112772,-0.6283088643290945,retrospective_internal_check
+TP_AR1,120,16,104,7.5,6.5,6.0,0.793689109611299,0.1077415859525218,retrospective_internal_check

@@ -1,0 +1,109 @@
+{
+  "variables": {
+    "L": "land-atmosphere stress",
+    "V": "vegetation stress",
+    "F": "climate forcing",
+    "time": "dimensionless, tau_L = 1"
+  },
+  "linear_model": {
+    "equations": [
+      "tau_L dL/dt = -L + a V + F(t)",
+      "tau_V dV/dt = -V + b L + eta F(t)"
+    ],
+    "tau_L": 1.0,
+    "a": 0.25,
+    "b": 0.8,
+    "tau_V_grid": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "eta_grid": [
+      0,
+      0.125,
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8
+    ],
+    "response_threshold_fractions": [
+      0.1,
+      0.5,
+      0.9
+    ]
+  },
+  "nonlinear_model": {
+    "equations": [
+      "tau_L dL/dt = F(t)-L+alpha V",
+      "tau_V dV/dt = H(L)-V",
+      "H(L)=1/(1+exp(-(L-theta)/s))"
+    ],
+    "tau_L": 1.0,
+    "tau_V": 8.0,
+    "alpha": 0.6,
+    "theta": 0.8,
+    "s": 0.07,
+    "forcing_start": 0.2,
+    "forcing_end": 0.8,
+    "ramp_durations": [
+      50,
+      100,
+      200,
+      400
+    ],
+    "alphas": [
+      0,
+      0.2,
+      0.6
+    ],
+    "tau_V_grid": [
+      0.25,
+      1,
+      4,
+      8,
+      16
+    ],
+    "dt_output": 0.05
+  },
+  "ews_experiment": {
+    "diffusion": "D_L = D_V = 0.0001",
+    "sampling_interval": 1.0,
+    "sample_lengths": [
+      60,
+      120,
+      240
+    ],
+    "main_sample_length": 120,
+    "baseline_calibration_replicates": 3000,
+    "evaluation_replicates": 600,
+    "detectability_threshold": 0.8,
+    "control_levels": 21,
+    "seed": 20261010
+  },
+  "common_driver_model": {
+    "equations": [
+      "dF=-F/tau_F dt+sqrt(2D_F/tau_F)dW_F",
+      "tau_L dL=(-L+F)dt",
+      "tau_V dV=(-V+F)dt"
+    ],
+    "tau_L": 1,
+    "tau_V": 8,
+    "tau_F_grid": [
+      0.5,
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "coupling_L_to_V": 0,
+    "coupling_V_to_L": 0
+  }
+}

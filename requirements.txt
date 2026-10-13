@@ -1,0 +1,10 @@
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.3
+statsmodels==0.14.5
+fathon==1.3.3.post1
+arch==7.2.0
+matplotlib==3.10.6
+rasterio==1.4.4
+threadpoolctl==3.6.0
+pyEDM==2.5.0
